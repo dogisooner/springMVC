@@ -9,6 +9,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>3.1.1.RELEASE</spring.version>
+    <org.slf4j.version>1.6.4</org.slf4j.version>
   </properties>
   <dependencies>
     <dependency>
@@ -34,6 +35,34 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <dependency>
+	 <groupId>org.slf4j</groupId>
+	 <artifactId>slf4j-api</artifactId>
+	 <version>${org.slf4j.version}</version>
+	 </dependency>
+	 <dependency>
+	 <groupId>org.slf4j</groupId>
+	 <artifactId>slf4j-log4j12</artifactId>
+	 <version>${org.slf4j.version}</version>
+	 <scope>runtime</scope>
+	 </dependency>
+	 <dependency>  
+            <groupId>org.slf4j</groupId>  
+            <artifactId>jcl-over-slf4j</artifactId>  
+            <version>${org.slf4j.version}</version>  
+            <scope>runtime</scope>  
+     </dependency>  
+	 <!-- JSR 303 with Hibernate Validator -->
+	 <dependency>
+	 <groupId>javax.validation</groupId>
+	 <artifactId>validation-api</artifactId>
+	 <version>1.0.0.GA</version>
+	 </dependency>
+	 <dependency>
+	 <groupId>org.hibernate</groupId>
+	 <artifactId>hibernate-validator</artifactId>
+	 <version>4.1.0.Final</version>
+	 </dependency>
   </dependencies>
   <build>
     <plugins>
